@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+/* Byt färger */
+
+:root {
+    --color1: #CED3F2;
+    --color2: #D0F2E9;
+    --color3: #F2E8C9;
+    --color4: #F2D8CE;
+    --color5: #F2CECE;
+    --primaryFont: 'montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--primaryFont);
+    color: black; 
+}
+
+header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    background-color: white; 
+ /*    background-image: linear-gradient(to right, #CED3F2, #D0F2E9, #F2E8C9, #F2D8CE, #F2CECE); */
+}
+
+.logo img {
+    max-width:200px
+}
+
+.logo {
+    display: flex;
+    flex: 1 auto; 
+    align-items: center;
+    margin-left: 30px;
+}
+
+.border {
+    border-bottom: 1.3px solid rgb(204, 204, 204);
+    padding-top: 10px; 
+    width: 80%;
+    margin: auto;
+}
+
+/* .meny-none {
+    flex: 1 auto;
+} */
+
+.navMeny {
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.icons {
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+#some {
+    color: #BEB8B5;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#some:hover {
+    color: #777
+}
+
+.nav-item {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 35px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #232323;
+    transition: all 0.8s ease;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+    height: 60px;    
+    background-color: #BEB8B5;
+}
+
+#social {
+    color:#777;
+    width: 40px; 
+    text-align: center;
+    font-size: 2em;
+}
+
+#social:hover {
+    color: #e1e1e1;
+}
+
+.copy {
+    color: #777;
+}
+
+ul.breadcrumb {
+    padding: 20px 130px;
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 6px;
+    color: black;
+    content: "\\";
+  }
+
+  ul.breadcrumb li a:hover {
+    color: #777;
+  }
+
